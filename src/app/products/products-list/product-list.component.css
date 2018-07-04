@@ -1,0 +1,64 @@
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    /*z-index: 1;  Stay on top */
+    top: 47.5px; /* Stay at the top */
+    left: 0;
+    background-color:white; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 30px;
+    margin-top: 70px;
+}
+.sidenav a{
+    color: RebeccaPurple;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+}
+.sidenav a:hover {
+    color: white;
+    background-color: RebeccaPurple;
+}
+.main{
+    margin-left: 160px; 
+    padding: 0px 10px 0px 10px;
+    background-color:#e4dadace;
+    height: 100%;
+    
+}
+.card{
+    float: left;
+    height: 300px;
+    padding: 5px;
+    margin-left: 25px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
+
+.card-body{
+    background-color: #eeebeb;
+    border-radius: 5px;
+    border: 1px;
+    border-color: #888888;
+}
+.card-text{
+    line-height: 13px;
+}
+.card-img-top{
+    height:70%;
+}
+.card:hover{
+    border:1px;
+    box-shadow: 2px 2px 5px #888888;
+}
+.main .btn:hover{
+    box-shadow: 3px 3px 5px #888888;
+}
+.breadcrumb{
+    padding-top: 60px;
+    height: 85px;
+    /* box-shadow: 0px 2px 2px #888888; */
+}
+

@@ -1,0 +1,29 @@
+        [{   
+            "productId": 1,
+            "ProductName":"Cherries",
+             "ProductDescription" :"Fruit",
+             "ProductPrice" :32,
+             "ProductCount" :2,
+             "imageUrl":"../../assets/cherries.jpg",
+             "starRating": 4
+            },
+            {
+             "productId": 2,
+             "ProductName":"Cake",
+             "ProductDescription" :"FreshCake",
+             "ProductPrice" :42,
+             "ProductCount" :20,
+             "imageUrl":"../../assets/cake.jpg",
+             "starRating": 4
+            },
+            {
+             "productId": 3,
+             "ProductName":"Spieces",
+             "ProductDescription" :"Mood",
+             "ProductPrice" :42,
+             "ProductCount" :20,
+             "imageUrl":"../../assets/spieces.jpg",
+             "starRating": 4
+            }]
+            
+          

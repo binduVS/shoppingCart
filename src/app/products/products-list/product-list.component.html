@@ -1,0 +1,26 @@
+<div class="breadcrumbs">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Products</a></li>
+  </ol>
+</div>
+<div class="sidenav">
+        <a href="#Categories">Categories</a>
+        <a href="#Prices">Prices</a>
+        <a href="#Brands">Brands</a>
+        <a href="#More">More..</a>
+    </div>
+    <div class="main">
+      <div *ngFor ='let product of Products'>
+        <div class="card" [routerLink]="['/products', product.productId]" style="width: 250px;">
+          <img class="card-img-top" [src]='product.imageUrl'>
+          <div class="card-body">
+            <div class="card-text">
+            <p>{{product.ProductName}}</p>
+            <p>{{product.ProductPrice | currency:'INR':true:'1.2-2'}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
