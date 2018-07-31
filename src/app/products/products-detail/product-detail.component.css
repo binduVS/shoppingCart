@@ -1,14 +1,21 @@
-img{
-    margin-top: 80px;
+.breadcrumb{
+    padding-top: 60px;
+    height: 85px;
+}
+.carousel-inner img{
+    margin-top: 50px;
     height: 300px;
     width: 350px;
     padding-bottom: 15px;
     padding-right: 10px;
     float: left;
+    margin-bottom: 50px;
 }
-.container-fluid{
-    background-color: #F7F3F3;
-    /* box-shadow: 0px 2px 2px #888888; */
+.product-name{
+    font-size: 20px;
+}
+.caption{
+    margin-top: 80px; 
 }
 .text{
     margin-top: 80px;
@@ -23,4 +30,86 @@ img{
 .btn-outline-primary:hover{
     background-color: white;
     color:RebeccaPurple;
+}
+.breadcrumb >.active a {
+    color: #888888;
+    text-decoration: none;
+ }
+.carousel-control-prev-icon{
+    margin-left: -200px;;
+ }
+.carousel-control-next-icon{
+    margin-right: -200px; 
+ }
+ .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 25px;
+  color: #888888;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 25px;
+  color: #888888;
+}
+
+.col-sm-4{
+   margin-left: 150px;
+   border-left: 1px;
+   border-left-style: solid;
+   border-left-color: #f5f5f5;
+   padding-left: 50px;
+ }
+.tagline{
+    font-size: 11px;
+    color: #888888;
+}
+.back{
+    text-decoration: none;
+}
+.count-input{
+    width: 100px;
+}
+.count-input .incr-btn, .count-input .decr-btn{
+    background-color: white;
+    color: rebeccapurple;
+    border: 1px;
+    border-style: solid;
+    border-color: rebeccapurple
+}
+.count-input input{
+    text-align: center;
+}
+
+.main{
+    border-top: 1px;
+    border-top-style: solid;
+    border-top-color: #f5f5f5;
+    margin-top: 15px;
+}
+.card{
+    float: left;
+    height: 250px;
+    margin-left: 5%;
+    margin-top: 18px;
+    z-index: auto;
+}
+.card-body{
+    background-color: white;
+    border: 1px;
+    border-color: #888888;
+    height: 20%
+}
+.card-text{
+    line-height: 11px;
+    font-size: 13px;
+    margin-top: -9px;
+}
+.card-img-top{
+    height:80%;
+}
+.card:hover{
+    border:1px;
+    box-shadow: 2px 2px 5px #888888;
 }

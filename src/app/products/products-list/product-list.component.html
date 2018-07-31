@@ -1,26 +1,81 @@
 <div class="breadcrumbs">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item"><a href="#">Products</a></li>
+    <li><a href="categories">Home</a></li>
+    <li class="active"><a href="products">Products</a></li>
   </ol>
 </div>
+<div class="container-fluid">
 <div class="sidenav">
-        <a href="#Categories">Categories</a>
-        <a href="#Prices">Prices</a>
-        <a href="#Brands">Brands</a>
-        <a href="#More">More..</a>
+<h4>&nbsp;FILTER &nbsp;:</h4>
+<div class="categories">
+  <h6 class="category-text">CATEGORY</h6>
+  <ul id="mycategory">
+    <li class="category-li" *ngFor ='let product of Categories'>
+      <a href="#">&nbsp;{{product.categoryName}}</a>
+    </li>
+  </ul>
+</div>
+<div class="brands">
+<div class="head">
+<h6 class="brand-text">BRAND</h6>
+<p class="brand-plus" id="brand-plus"  style="display: inline-block;" (click)='openbrand()'>&#43;</p>
+<p class="brand-minus" id="brand-minus"  style="display: none;" (click)='closebrand()'>&minus;</p>
+</div>
+<ul id="mybrand"  style="display: none;">
+  <li class="brand-li" id="brand-li" *ngFor ='let product of brandorder'>
+    <input type="checkbox" class="brand-checkbox" name="brand-checkbox" id="brand-checkbox">&nbsp;{{product}}</li>
+  <button type="submit" class="brand-go" style="width: 30px;" (click)="brandfilter()">Go</button>
+</ul>
+
+</div> 
+<div class="prices">
+  <div class="head">
+    <h6 class="price-text">PRICE</h6>
+    <p class="price-plus" id="price-plus" style="cursor: pointer;" style="display: inline-block;" (click)='openprice()'>&#43;</p>
+    <p class="price-minus" id="price-minus" style="cursor: pointer;" style="display: none;" (click)='closeprice()'>&minus;</p>
+  </div>
+    <div class="checkbox-group" id="myprice" style="display: none;">
+      <input type="radio" class="price" name="price" (click)="clearprice()"><p class="check-text" id="check-text">All</p><br>
+      <input type="radio" class="price" name="price" (click)="radio1()"><p class="check-text" id="check-text1">{{filteredprices[0]}} to {{filteredprices[quaterprice]}} </p><br>
+      <input type="radio" class="price" name="price" (click)="radio2()"><p class="check-text" id="check-text2">{{filteredprices[quaterprice]}} to {{filteredprices[halfprice]}}</p><br>
+      <input type="radio" class="price" name="price" (click)="radio3()"><p class="check-text" id="check-text3">{{filteredprices[halfprice]}} to {{filteredprices[maxprice-1]}}</p><br>
+      <div class="price-enter">
+          <form>
+          <i class="fa fa-rupee"></i>
+          <input type="text" class="min-value" id="min-value" style="width: 30px;" required>
+          <p class="to">to</p>
+          <input type="text" class="max-value" id="max-value" style="width: 30px;" required>
+          <button type="submit" class="price-go" style="width: 30px;" (click)="pricego()">Go</button>
+          </form>
+        </div>
     </div>
-    <div class="main">
+</div>
+<div class="colors">
+  <div class="head">
+  <h6 class="color-text">COLOR</h6>
+  <span class="color-plus" id="color-plus" style="display: inline-block;" (click)='opencolor()'>&#43;</span>
+  <p class="color-minus" id="color-minus" style="display: none;" (click)='closecolor()'>&minus;</p>
+  </div>
+  <div class="color-list" style="display: none" id="mycolor">
+    <div  *ngFor ='let product of Products'>
+  <span class="badge badge-notify" id="color-badge" [ngStyle]="{'background-color':product.ProductColor}" >&nbsp;</span>
+  <span class="color-text" style="cursor: pointer;" (click)="colorfilter()">&nbsp;{{product.ProductColor}}</span>
+     </div>
+  </div>
+  </div>
+</div>
+    <div class="main" id="main">
       <div *ngFor ='let product of Products'>
-        <div class="card" [routerLink]="['/products', product.productId]" style="width: 250px;">
+        <div class="card" [routerLink]="['/products', product.productId]" style="width: 230px;">
           <img class="card-img-top" [src]='product.imageUrl'>
           <div class="card-body">
             <div class="card-text">
             <p>{{product.ProductName}}</p>
             <p>{{product.ProductPrice | currency:'INR':true:'1.2-2'}}</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  
+     </div>
+   </div>
+</div>
+ 

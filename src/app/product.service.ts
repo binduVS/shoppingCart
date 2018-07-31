@@ -8,6 +8,7 @@ import 'rxjs/add/operator/do';
 @Injectable()
 export class ProductService{
   private _productUrl = '../assets/products.json';
+  private _categoriesUrl = '../assets/categories.json'
   constructor(private _http:HttpClient){
 
   }
@@ -16,4 +17,9 @@ export class ProductService{
            .do(data => console.log(JSON.stringify(data)))
            
     } 
+    getCategories(): any{
+      return this._http.get(this._categoriesUrl)
+         .do(data => console.log(JSON.stringify(data)))
+         
+  }
 }

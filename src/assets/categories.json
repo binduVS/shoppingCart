@@ -1,0 +1,198 @@
+[  {   
+    "categoryId": 1,
+    "categoryName":"Clothing",
+    "subcategory":{
+        "sub1": {
+          "list1":"Men",
+          "list2":"Shirts",
+          "list3":"T-shirts",
+          "list4":"Casuals",
+          "list5":"Formal pants",
+          "list6":"Jeans",
+          "list7":"Belts",
+          "list8":"Footwear",
+          "list9":"Sunglasses"
+        },
+        "sub2":{
+          "list1":"Women",
+          "list2":"Kurtas and suits",
+          "list3":"Ethnic dresses",
+          "list4":"Casuals",
+          "list5":"Formal pants",
+          "list6":"Jeans",
+          "list7":"Shirts",
+          "list8":"T-shirts",
+          "list9":"Footwear"
+        },
+        "sub3":{
+          "list1":"Kids",
+          "list2":"T-shirts",
+          "list3":"pants",
+          "list4":"dresses",
+          "list5":"skirts",
+          "list6":"footwear",
+          "list7":"sweaters",
+          "list8":"Toys",
+          "list9":"Night wear"
+       }
+     }       
+    },
+    {
+     "categoryId": 2,
+     "categoryName":"Home and Living",
+     "subcategory":{
+      "sub1": {
+        "list1":"Bed Linen & Furnishing",
+        "list2":"Bedsheets",
+        "list3":"Bedding sets",
+        "list4":"Blankets",
+        "list5":"Pillows",
+        "list6":"Pillow covers",
+        "list7":"Bed covers",
+        "list8":"cushions",
+        "list9":"cushion covers"
+      },
+      "sub2":{
+        "list1":"Home Decor",
+        "list2":"Plants and Planters",
+        "list3":"Candles and Candle holders",
+        "list4":"Clocks",
+        "list5":"Mirrors",
+        "list6":"Wall Shelves",
+        "list7":"Fountains",
+        "list8":"Show pieces and vases",
+        "list9":"Lamps"
+      },
+      "sub3":{
+        "list1":"Brands",
+        "list2":"Bombay Dyeing",
+        "list3":"Spaces",
+        "list4":"Raymond",
+        "list5":"Swayam",
+        "list6":"Cortina",
+        "list7":"WelHome",
+        "list8":"Home Sparkle",
+        "list9":"House This"
+    }
+  }   
+    },
+    {
+     "categoryId": 3,
+     "categoryName":"Grocery",
+     "subcategory":{
+      "sub1": {
+        "list1":"Breads and Buns",
+        "list2":"Cookies and Rusks",
+        "list3":"Ice-creams",
+        "list4":"Gormet-breads",
+        "list5":"Cakes and pastries",
+        "list6":"Bakery Snacks",
+        "list7":"Sweets",
+        "list8":"Drinks",
+        "list9":"Minute-made"
+      },
+      "sub2":{
+        "list1":"Dairy",
+        "list2":"Milk",
+        "list3":"Paneer",
+        "list4":"Butter",
+        "list5":"Cheese",
+        "list6":"Yoghurt",
+        "list7":"Butter milk",
+        "list8":"Powdered milk",
+        "list9":"Soya milk"
+      },
+      "sub3":{
+        "list1":"Snacks",
+        "list2":"Cookies",
+        "list3":"Noodles and pasta",
+        "list4":"choco-spreads",
+        "list5":"ketchups",
+        "list6":"footwear",
+        "list7":"chocolates",
+        "list8":"Namkeen",
+        "list9":"Frozen-veggies"
+    }
+  }   
+    },
+    {   
+    "categoryId": 4,
+    "categoryName":"Kitchen",
+    "subcategory":{
+      "sub1": {
+        "list1":"Breads and Buns",
+        "list2":"Cookies and Rusks",
+        "list3":"Ice-creams",
+        "list4":"Gormet-breads",
+        "list5":"Cakes and pastries",
+        "list6":"Bakery Snacks",
+        "list7":"Sweets",
+        "list8":"Drinks",
+        "list9":"Minute-made"
+      },
+      "sub2":{
+        "list1":"Dairy",
+        "list2":"Milk",
+        "list3":"Paneer",
+        "list4":"Butter",
+        "list5":"Cheese",
+        "list6":"Yoghurt",
+        "list7":"Butter milk",
+        "list8":"Powdered milk",
+        "list9":"Soya milk"
+      },
+      "sub3":{
+        "list1":"Snacks",
+        "list2":"Cookies",
+        "list3":"Noodles and pasta",
+        "list4":"choco-spreads",
+        "list5":"ketchups",
+        "list6":"footwear",
+        "list7":"chocolates",
+        "list8":"Namkeen",
+        "list9":"Frozen-veggies"
+    }
+  }   
+    },
+    {
+     "categoryId": 5,
+     "categoryName":"Food",
+     "subcategory":{
+      "sub1": {
+        "list1":"Breads and Buns",
+        "list2":"Cookies and Rusks",
+        "list3":"Ice-creams",
+        "list4":"Gormet-breads",
+        "list5":"Cakes and pastries",
+        "list6":"Bakery Snacks",
+        "list7":"Sweets",
+        "list8":"Drinks",
+        "list9":"Minute-made"
+      },
+      "sub2":{
+        "list1":"Dairy",
+        "list2":"Milk",
+        "list3":"Paneer",
+        "list4":"Butter",
+        "list5":"Cheese",
+        "list6":"Yoghurt",
+        "list7":"Butter milk",
+        "list8":"Powdered milk",
+        "list9":"Soya milk"
+      },
+      "sub3":{
+        "list1":"Snacks",
+        "list2":"Cookies",
+        "list3":"Noodles and pasta",
+        "list4":"choco-spreads",
+        "list5":"ketchups",
+        "list6":"footwear",
+        "list7":"chocolates",
+        "list8":"Namkeen",
+        "list9":"Frozen-veggies"
+    }
+  }    
+}
+]
+    
+  

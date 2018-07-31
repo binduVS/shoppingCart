@@ -1,16 +1,21 @@
 <div class="topnav">
-        <a class="active" href="#home">Home</a>
+        <a class="active" href="categories">Home</a>
         <a class="about" href="#about">About</a>
         
-        <input type="text" class="search" placeholder=" Search...">
-        <!--<span class="glyphicon glyphicon-search"></span>-->
-        <span><a class="glyphicon glyphicon-shopping-cart" href="#cart"></a></span>
+        <input type="text" class="search" id="search" placeholder=" Search...">
+        <button type="submit" class="btn btn-link" (click)="search()">
+          <span class="glyphicon glyphicon-search"></span>
+      </button>
+        <span class="cart">
+          <a class="glyphicon glyphicon-shopping-cart" href="cart"></a>
+          <span class="badge badge-notify" id="cart" ng-if="count>0">{{count}}</span>
+        </span>
         <span class="dropdown">
           <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
            <p class="glyphicon glyphicon-user"></p>
           </button>
           <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">My orders</a>
+              <a class="dropdown-item" href="profile">My Profile</a>
               <a class="dropdown-item" href="#">SignOut</a>
           </div>
         </span>

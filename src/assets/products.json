@@ -1,28 +1,97 @@
         [{   
             "productId": 1,
-            "ProductName":"Cherries",
+            "ProductName":"cherries",
              "ProductDescription" :"Fruit",
              "ProductPrice" :32,
-             "ProductCount" :2,
+             "ProductBrand" :"Chiquita",
+             "ProductColor" :"red",
              "imageUrl":"../../assets/cherries.jpg",
+             "carouselUrl":"../../assets/cherries.jpg",
+             "tags":{
+                 "range":"100-200",
+                 "style":"indian",
+                 "species":"Prunus"
+               },
              "starRating": 4
             },
             {
              "productId": 2,
-             "ProductName":"Cake",
+             "ProductName":"cake",
              "ProductDescription" :"FreshCake",
              "ProductPrice" :42,
-             "ProductCount" :20,
+             "ProductBrand" :"Zespri",
+             "ProductColor" :"green",
              "imageUrl":"../../assets/cake.jpg",
+             "carouselUrl":"../../assets/cake.jpg",
+             "tags":{
+                 "range":"200-300",
+                 "style":"cream",
+                 "species":"Baked"
+               },
              "starRating": 4
             },
             {
              "productId": 3,
-             "ProductName":"Spieces",
-             "ProductDescription" :"Mood",
-             "ProductPrice" :42,
-             "ProductCount" :20,
+             "ProductName":"spieces",
+             "ProductDescription" :"Taste",
+             "ProductPrice" :72,
+             "ProductBrand" :"Frutia",
+             "ProductColor" :"blue",
              "imageUrl":"../../assets/spieces.jpg",
+             "carouselUrl":"../../assets/spieces.jpg",
+             "tags":{
+                 "range":"50-100",
+                 "style":"indian",
+                 "species":"taste"
+               },
+             "starRating": 4
+            },
+            {   
+            "productId": 4,
+            "ProductName":"cherries",
+             "ProductDescription" :"Fruit",
+             "ProductPrice" :92,
+             "ProductBrand" :"Breeze",
+             "ProductColor" :"yellow",
+             "imageUrl":"../../assets/cherries.jpg",
+             "carouselUrl":"../../assets/cherries.jpg",
+             "tags":{
+                 "range":"50-100",
+                 "style":"indian",
+                 "species":"Prunus"
+               },
+             "starRating": 4
+            },
+            {
+             "productId": 5,
+             "ProductName":"cake",
+             "ProductDescription" :"FreshCake",
+             "ProductPrice" :102,
+             "ProductBrand" :"Grapery",
+             "ProductColor" :"black",
+             "imageUrl":"../../assets/cake.jpg",
+             "carouselUrl":"../../assets/cake.jpg",
+             "tags":{
+                 "range":"100-200",
+                 "style":"creamy",
+                 "species":"baked"
+               },
+             "starRating": 4
+            },
+            {
+             "productId": 6,
+             "ProductName":"spieces",
+             "ProductDescription" :"Taste",
+             "ProductPrice" :142,
+             "ProductBrand" :"Hello fruits",
+             "ProductColor" :"orange",
+             "imageUrl":"../../assets/spieces.jpg",
+             "carouselUrl":"../../assets/spieces.jpg",
+             "tags":{
+                 "range":"50-100",
+                 "style":"indian",
+                 "species":"taste"
+               },
              "starRating": 4
             }]
             
