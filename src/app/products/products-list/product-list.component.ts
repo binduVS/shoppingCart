@@ -14,6 +14,7 @@ export class ProductListComponent implements OnInit {
   copy : IProduct[];
   brandorder : any[] =[];
   Filtereditems : IProduct[]=[];
+  filteredcolors : any[]=[];
   filteredprices:number[]=[]
   quaterprice : number;
   halfprice : number;
@@ -131,7 +132,12 @@ pricego(){
      this.Products = products;
      for(var i=0; i<products.length; i++){
       this.filteredprices.push(products[i].ProductPrice)
+      if(this.filteredcolors.includes(products[i].ProductColor)==false){
+      this.filteredcolors.push(products[i].ProductColor);
+      }
+      if(this.brandorder.includes(products[i].ProductBrand)==false){
       this.brandorder.push(products[i].ProductBrand);
+      }
       }
       this.filteredprices.sort(function(a,b) { return a - b; });
       //this.brandorder.sort();

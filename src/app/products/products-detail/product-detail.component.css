@@ -53,6 +53,10 @@
   font-size: 25px;
   color: #888888;
 }
+img.d-block.w-100{
+    width: 300px ! important;
+    margin-left: 130px;
+}
 
 .col-sm-4{
    margin-left: 150px;

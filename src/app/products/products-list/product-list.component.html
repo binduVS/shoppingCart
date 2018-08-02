@@ -57,9 +57,9 @@
   <p class="color-minus" id="color-minus" style="display: none;" (click)='closecolor()'>&minus;</p>
   </div>
   <div class="color-list" style="display: none" id="mycolor">
-    <div  *ngFor ='let product of Products'>
-  <span class="badge badge-notify" id="color-badge" [ngStyle]="{'background-color':product.ProductColor}" >&nbsp;</span>
-  <span class="color-text" style="cursor: pointer;" (click)="colorfilter()">&nbsp;{{product.ProductColor}}</span>
+    <div  *ngFor ='let product of filteredcolors'>
+  <span class="badge badge-notify" id="color-badge" [ngStyle]="{'background-color':product}" >&nbsp;</span>
+  <span class="color-text" style="cursor: pointer;" (click)="colorfilter()">&nbsp;{{product}}</span>
      </div>
   </div>
   </div>

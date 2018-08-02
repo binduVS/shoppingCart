@@ -49,13 +49,49 @@ export class ProductDetailComponent implements OnInit {
    .subscribe(products=> {
      this.product = products.find(item => item.productId === id);
      for(var i=0; i<products.length; i++){
-    
       if(products[i].productId !== this.product.productId){
-        
-         this.relatedproducts.push(products[i]);
-       }
+        if(products[i].tags.range ==this.product.tags.range && products[i].tags.style ==this.product.tags.style && products[i].tags.species ==this.product.tags.species){
+          //this.relatedproducts[i] == products[i];
+          this.relatedproducts.push(products[i]);
+          console.log('entered one',this.relatedproducts);
+        }
+       } 
      }
-     console.log(this.relatedproducts);
+     for(var i=0; i<products.length; i++){
+      if(products[i].productId !== this.product.productId){
+        var length = this.relatedproducts.length;
+        if((products[i].tags.range ==this.product.tags.range && products[i].tags.style ==this.product.tags.style) || (products[i].tags.style ==this.product.tags.style && products[i].tags.species ==this.product.tags.species) || (products[i].tags.species ==this.product.tags.species && products[i].tags.range ==this.product.tags.range)){
+          if(this.relatedproducts.includes(products[i])==false){
+          console.log(length);
+          this.relatedproducts.push(products[i]);
+          //this.relatedproducts[length] == products[i];
+          console.log(this.relatedproducts);
+          }
+        }
+      }
+     }
+     for(var i=0; i<products.length; i++){
+      if(products[i].productId !== this.product.productId){
+        var length = this.relatedproducts.length;
+        if((products[i].tags.range ==this.product.tags.range || products[i].tags.style ==this.product.tags.style || products[i].tags.species ==this.product.tags.species)){
+          if(this.relatedproducts.includes(products[i])==false){
+            this.relatedproducts.push(products[i]);
+          }
+        }
+      }
+     }
+            // else if((products[i].tags.range ==this.product.tags.range && products[i].tags.style ==this.product.tags.style) || (products[i].tags.style ==this.product.tags.style && products[i].tags.species ==this.product.tags.species) || (products[i].tags.species ==this.product.tags.species && products[i].tags.range ==this.product.tags.range)){
+        //   if(this.relatedproducts.includes(products[i])==false){
+        //   this.relatedproducts.push(products[i]);
+        //   console.log('entered two',this.relatedproducts);
+        //   }
+        // }
+        // else if(products[i].tags.range ==this.product.tags.range || products[i].tags.style ==this.product.tags.style || products[i].tags.species ==this.product.tags.species){
+        //   if(this.relatedproducts.includes(products[i])==false){
+        //   this.relatedproducts.push(products[i]);
+        //   console.log('entered third',this.relatedproducts); 
+         //this.relatedproducts.push(products[i]);
+         //console.log(this.relatedproducts);
     },
     error=> this.errorMessage = <any>error);
     

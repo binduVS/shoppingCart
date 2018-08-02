@@ -1,30 +1,30 @@
         [{   
             "productId": 1,
-            "ProductName":"cherries",
-             "ProductDescription" :"Fruit",
+            "ProductName":"Bread",
+             "ProductDescription" :"Baked food",
              "ProductPrice" :32,
              "ProductBrand" :"Chiquita",
              "ProductColor" :"red",
-             "imageUrl":"../../assets/cherries.jpg",
-             "carouselUrl":"../../assets/cherries.jpg",
+             "imageUrl":"../../assets/bread.png",
+             "carouselUrl":"../../assets/bread.png",
              "tags":{
-                 "range":"100-200",
-                 "style":"indian",
-                 "species":"Prunus"
+                 "range":"50-100",
+                 "style":"flour",
+                 "species":"Baked"
                },
              "starRating": 4
             },
             {
              "productId": 2,
-             "ProductName":"cake",
+             "ProductName":"Chocolate cake",
              "ProductDescription" :"FreshCake",
              "ProductPrice" :42,
              "ProductBrand" :"Zespri",
              "ProductColor" :"green",
-             "imageUrl":"../../assets/cake.jpg",
-             "carouselUrl":"../../assets/cake.jpg",
+             "imageUrl":"../../assets/cake2.jpg",
+             "carouselUrl":"../../assets/cake2.jpg",
              "tags":{
-                 "range":"200-300",
+                 "range":"100-200",
                  "style":"cream",
                  "species":"Baked"
                },
@@ -32,65 +32,161 @@
             },
             {
              "productId": 3,
-             "ProductName":"spieces",
+             "ProductName":"Nescafe",
              "ProductDescription" :"Taste",
              "ProductPrice" :72,
-             "ProductBrand" :"Frutia",
-             "ProductColor" :"blue",
-             "imageUrl":"../../assets/spieces.jpg",
-             "carouselUrl":"../../assets/spieces.jpg",
+             "ProductBrand" :"Nescafe",
+             "ProductColor" :"chocolate",
+             "imageUrl":"../../assets/nescafe.jpg",
+             "carouselUrl":"../../assets/nescafe.jpg",
              "tags":{
-                 "range":"50-100",
-                 "style":"indian",
-                 "species":"taste"
+                 "range":"150-250",
+                 "style":"dark",
+                 "species":"coffee"
                },
              "starRating": 4
             },
             {   
             "productId": 4,
-            "ProductName":"cherries",
-             "ProductDescription" :"Fruit",
+            "ProductName":"Leo Coffee",
+             "ProductDescription" :"Coffee",
              "ProductPrice" :92,
-             "ProductBrand" :"Breeze",
+             "ProductBrand" :"leo",
              "ProductColor" :"yellow",
-             "imageUrl":"../../assets/cherries.jpg",
-             "carouselUrl":"../../assets/cherries.jpg",
+             "imageUrl":"../../assets/leo-coffe.jpg",
+             "carouselUrl":"../../assets/leo-coffe.jpg",
              "tags":{
-                 "range":"50-100",
-                 "style":"indian",
-                 "species":"Prunus"
+                 "range":"150-250",
+                 "style":"dark",
+                 "species":"coffee"
                },
              "starRating": 4
             },
             {
              "productId": 5,
-             "ProductName":"cake",
+             "ProductName":"Cream puff",
              "ProductDescription" :"FreshCake",
              "ProductPrice" :102,
              "ProductBrand" :"Grapery",
              "ProductColor" :"black",
-             "imageUrl":"../../assets/cake.jpg",
-             "carouselUrl":"../../assets/cake.jpg",
+             "imageUrl":"../../assets/cream-puff.jpg",
+             "carouselUrl":"../../assets/cream-puff.jpg",
              "tags":{
                  "range":"100-200",
-                 "style":"creamy",
-                 "species":"baked"
+                 "style":"cream",
+                 "species":"Baked"
                },
              "starRating": 4
             },
             {
              "productId": 6,
-             "ProductName":"spieces",
+             "ProductName":"Bru",
              "ProductDescription" :"Taste",
              "ProductPrice" :142,
-             "ProductBrand" :"Hello fruits",
+             "ProductBrand" :"Bru",
              "ProductColor" :"orange",
-             "imageUrl":"../../assets/spieces.jpg",
-             "carouselUrl":"../../assets/spieces.jpg",
+             "imageUrl":"../../assets/bru.jpg",
+             "carouselUrl":"../../assets/bru.jpg",
              "tags":{
-                 "range":"50-100",
-                 "style":"indian",
-                 "species":"taste"
+                 "range":"150-250",
+                 "style":"dark",
+                 "species":"coffee"
+               },
+             "starRating": 4
+            },
+            {
+             "productId": 7,
+             "ProductName":"T-Shirt G",
+             "ProductDescription" :"Men's Tops",
+             "ProductPrice" :250,
+             "ProductBrand" :"Max",
+             "ProductColor" :"grey",
+             "imageUrl":"../../assets/clothing/shirt1.jpg",
+             "carouselUrl":"../../assets/clothing/shirt1.jpg",
+             "tags":{
+                 "range":"200-250",
+                 "style":"t-shirt",
+                 "species":"cloth"
+               },
+             "starRating": 4
+            },
+            {
+             "productId": 8,
+             "ProductName":"T-shirt GR",
+             "ProductDescription" :"Men's Tops",
+             "ProductPrice" :200,
+             "ProductBrand" :"H&M",
+             "ProductColor" :"black",
+             "imageUrl":"../../assets/clothing/shirt2.jpg",
+             "carouselUrl":"../../assets/clothing/shirt2.jpg",
+             "tags":{
+                 "range":"200-250",
+                 "style":"t-shirt",
+                 "species":"cloth"
+               },
+             "starRating": 4
+            },
+            {
+             "productId": 9,
+             "ProductName":"Shirt G",
+             "ProductDescription" :"Men's Tops",
+             "ProductPrice" :230,
+             "ProductBrand" :"Bewakoof",
+             "ProductColor" :"white",
+             "imageUrl":"../../assets/clothing/shirt3.jpg",
+             "carouselUrl":"../../assets/clothing/shirt3.jpg",
+             "tags":{
+                 "range":"200-250",
+                 "style":"t-shirt",
+                 "species":"cloth"
+               },
+             "starRating": 4
+            },
+            {
+             "productId": 10,
+             "ProductName":"Jeans-Shirt",
+             "ProductDescription" :"Tops",
+             "ProductPrice" :500,
+             "ProductBrand" :"Denim",
+             "ProductColor" :"blue",
+             "imageUrl":"../../assets/clothing/jeans-shirt.jpg",
+             "carouselUrl":"../../assets/clothing/jeans-shirt.jpg",
+             "tags":{
+                 "range":"500-600",
+                 "style":"shirt",
+                 "species":"jeans"
+               },
+             "starRating": 4
+            },
+            {
+             "productId": 11,
+             "ProductName":"Denim Shirt G",
+             "ProductDescription" :"Tops",
+             "ProductPrice" :550,
+             "ProductBrand" :"Denim",
+             "ProductColor" :"blue",
+             "imageUrl":"../../assets/clothing/jeans-shirt2.jpg",
+             "carouselUrl":"../../assets/clothing/jeans-shirt2.jpg",
+             "tags":{
+                 "range":"500-600",
+                 "style":"shirt",
+                 "species":"jeans"
+               },
+             "starRating": 4
+            },
+            {
+             "productId": 12,
+             "ProductName":"Shirt blue",
+             "ProductDescription" :"Men's Tops",
+             "ProductPrice" :500,
+             "ProductBrand" :"Bewakoof",
+             "ProductColor" :"blue",
+             "imageUrl":"../../assets/clothing/jeans-shirt3.jpg",
+             "carouselUrl":"../../assets/clothing/jeans-shirt3.jpg",
+             "tags":{
+                 "range":"500-600",
+                 "style":"shirt",
+                 "species":"jeans"
                },
              "starRating": 4
             }]
