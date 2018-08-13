@@ -4,7 +4,7 @@ import { IProduct } from '../product';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../product.service';
 import { AppComponent } from '../app.component';
-
+import { ProductDetailComponent } from '../products/products-detail/product-detail.component';
 
 @Component({
   selector: 'app-cart',
@@ -14,9 +14,16 @@ import { AppComponent } from '../app.component';
 export class CartComponent implements OnInit {
 product :IProduct;
 cart :IProduct[] =[];
-  constructor(private appcomponent:AppComponent) {
-
-  }
+quantity:number;
+cartproducts:any[]=[];
+CGST:number = 2.75;
+SGST:number= 2.75;
+// totalprice :number = (this.quantity)*(this.product.ProductPrice);
+constructor(private appcomponent:AppComponent, private productdetail: ProductDetailComponent) {
+  this.quantity = parseInt(productdetail.quantity);
+  this.cartproducts=productdetail.itemsArray;
+  console.log(productdetail.product);
+}
   ngOnInit() {
     var item = JSON.parse(localStorage.getItem('storedproduct'));
     this.cart.push(item);

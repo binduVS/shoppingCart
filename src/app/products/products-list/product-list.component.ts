@@ -13,8 +13,8 @@ export class ProductListComponent implements OnInit {
   Products : IProduct[] = [];
   copy : IProduct[];
   brandorder : any[] =[];
-  Filtereditems : IProduct[]=[];
-  filteredcolors : any[]=[];
+  SearchedItems : IProduct[]=[];
+  colororder : any[]=[];
   filteredprices:number[]=[]
   quaterprice : number;
   halfprice : number;
@@ -80,11 +80,24 @@ export class ProductListComponent implements OnInit {
   (<HTMLInputElement>document.getElementById('min-value')).value = '';
   (<HTMLInputElement>document.getElementById('max-value')).value = '';
  }
- colorfilter(){
-
+ clearallfilter(){
+  this.Products = this.copy;
  }
+ colorfilter(c: any){
+  this.Products=this.copy;
+  var filteredcolors=[];
+  for(var i=0; i<this.Products.length; i++){
+   if(this.Products[i].ProductColor == c ){
+   filteredcolors.push(this.Products[i]);
+   }
+ }
+  console.log(this.colororder.length);
+   this.Products=filteredcolors;
+  }
+
+  
  radio1(){
-   var condition = document.getElementById('check-text1').innerHTML;
+   var condition = (<HTMLInputElement>document.getElementById('check-text1')).innerHTML;
    condition = condition.replace(/\s/g,'');
    var condition = condition.replace(/to/g, "-");
    var fields = condition.split('-');
@@ -117,9 +130,8 @@ pricego(){
   this.filterprice(parseInt(min),parseInt(max));
 }
 
-  constructor(private _productService:ProductService, private appcomponent:AppComponent){ 
-    this.Filtereditems = this.Products;
-  }
+constructor(private _productService:ProductService, private appcomponent:AppComponent){ 
+}
   ngOnInit():void{
     this._productService.getCategories()
     .subscribe(categories=> {
@@ -132,8 +144,8 @@ pricego(){
      this.Products = products;
      for(var i=0; i<products.length; i++){
       this.filteredprices.push(products[i].ProductPrice)
-      if(this.filteredcolors.includes(products[i].ProductColor)==false){
-      this.filteredcolors.push(products[i].ProductColor);
+      if(this.colororder.includes(products[i].ProductColor)==false){
+      this.colororder.push(products[i].ProductColor);
       }
       if(this.brandorder.includes(products[i].ProductBrand)==false){
       this.brandorder.push(products[i].ProductBrand);
@@ -145,8 +157,10 @@ pricego(){
       this.quaterprice = parseInt(((this.halfprice)/2).toFixed());
       this.maxprice = this.filteredprices.length;
       this.copy = this.Products.slice();
-      console.log(this.brandorder);
-
+      if(this.appcomponent.filteredProducts.length !== 0){
+        this.Products = this.appcomponent.filteredProducts;
+        console.log('entered component');
+      }
     },
     error=> this.errorMessage = <any>error);
 

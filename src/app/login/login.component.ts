@@ -6,7 +6,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  login(){
+    var mail = (<HTMLInputElement>document.getElementById('InputEmail1')).value;
+    var password = (<HTMLInputElement>document.getElementById('InputPassword1')).value;
+    if(mail == "admin" && password == "admin"){
+      window.location.href = "/categories";
+    }
+  }
   constructor(){
   }
 

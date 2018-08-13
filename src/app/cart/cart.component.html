@@ -1,6 +1,6 @@
 <div class="container">
   <h2>Your Cart</h2>
-  <table class="table table-hover">
+  <table class="table table-hover" style="width: 50%">
     <thead>
       <tr>
         <th>Item Description</th>
@@ -13,11 +13,18 @@
       <tr>
         <td>{{carts.ProductName}}</td>
         <td>{{carts.ProductPrice}}</td>
-        <td>{{carts.ProductCount}}</td>
-        <td>{{carts.ProductPrice*carts.ProductCount}}</td>
+        <td>{{quantity}}</td>
+        <td>{{carts.ProductPrice*quantity}}</td>
       </tr>
-         
     </tbody>
   </table>
-  <p>Pay using <a href="#">PayTm</a></p>
+  <div class="checkout">
+    <div class="charges-checkout" *ngFor ='let carts of cart'>
+      <p>Total Price : {{carts.ProductPrice*quantity}}</p>
+      <p>CGST : {{CGST}}</p>
+      <p>SGST : {{SGST}}</p>
+      <p>Total Amount : {{totalprice+CGST+SGST}}</p>
+      <button type="submit" class="checkout-button" id="checkout-button">CheckOut</button>
+    </div>
+  </div>
 </div>

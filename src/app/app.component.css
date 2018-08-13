@@ -62,8 +62,7 @@
     color: RebeccaPurple;
 }
 .glyphicon-search{
-   font-size: 15px;
-   
+   font-size: 17px;  
 }
 .topnav .dropdown-toggle{
     background-color: RebeccaPurple;
@@ -77,7 +76,12 @@
     top: -15px;
     left: -63px;
  }
- 
+ .well{
+     padding-top: 4%;
+     margin-top: 15%;
+     z-index: 5;
+     height: 10%;
+ }
 /* .dropdown:active .dropdown-menu{
     display: block;
 } */

@@ -11,9 +11,6 @@ export class CategoriesComponent implements OnInit {
  constructor(private _productService:ProductService){ 
   
 }
-subitems(){
-  document.getElementById("sub-nav-wrapper").style.display = 'block';
-}
   ngOnInit() {
     this._productService.getCategories()
    .subscribe(categories=> {

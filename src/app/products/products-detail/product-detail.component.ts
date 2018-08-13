@@ -16,10 +16,10 @@ export class ProductDetailComponent implements OnInit {
   errorMessage:string;
   relatedproducts: IProduct[]=[];
   itemsArray:any=[];
-  quantity : any;
+  quantity : any = '1';
   constructor(private _route: ActivatedRoute,private _productService:ProductService) {
    
-   }
+  }
 
   increment(){
     var input = parseInt((<HTMLInputElement>document.getElementById('quantity')).value);
@@ -39,8 +39,9 @@ export class ProductDetailComponent implements OnInit {
 
    addtocart(){
     localStorage.setItem('storedproduct', JSON.stringify(this.product));
+    this.product["ProductCount"] = this.quantity;
     this.itemsArray.push(this.product)
-    console.log(this.product);
+    console.log(this.itemsArray);
    }
     
   ngOnInit():void{

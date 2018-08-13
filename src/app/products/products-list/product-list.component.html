@@ -1,3 +1,5 @@
+<html>
+<body>
 <div class="breadcrumbs">
   <ol class="breadcrumb">
     <li><a href="categories">Home</a></li>
@@ -6,7 +8,8 @@
 </div>
 <div class="container-fluid">
 <div class="sidenav">
-<h4>&nbsp;FILTER &nbsp;:</h4>
+<h4>&nbsp;FILTER BY&nbsp;:</h4>
+<span class="clearallfilter" (click)="clearallfilter()">CLEAR&nbsp;</span>
 <div class="categories">
   <h6 class="category-text">CATEGORY</h6>
   <ul id="mycategory">
@@ -56,12 +59,12 @@
   <span class="color-plus" id="color-plus" style="display: inline-block;" (click)='opencolor()'>&#43;</span>
   <p class="color-minus" id="color-minus" style="display: none;" (click)='closecolor()'>&minus;</p>
   </div>
-  <div class="color-list" style="display: none" id="mycolor">
-    <div  *ngFor ='let product of filteredcolors'>
-  <span class="badge badge-notify" id="color-badge" [ngStyle]="{'background-color':product}" >&nbsp;</span>
-  <span class="color-text" style="cursor: pointer;" (click)="colorfilter()">&nbsp;{{product}}</span>
-     </div>
-  </div>
+  <div class="color-list" style="display: none" id="mycolor"> 
+    <div class="colorlist" *ngFor ='let product of colororder'>
+   <span class="badge badge-notify" id="color-badge" [ngStyle]="{'background-color':product}" (click)="colorfilter()" >&nbsp;</span>
+   <span class="colors-text" id="color-text" style="cursor: pointer;" (click)="colorfilter(product)">&nbsp;{{product}}</span>
+   </div>  
+</div>
   </div>
 </div>
     <div class="main" id="main">
@@ -78,4 +81,6 @@
      </div>
    </div>
 </div>
+</body>
+</html>
  

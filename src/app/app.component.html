@@ -1,9 +1,9 @@
 <div class="topnav">
         <a class="active" href="categories">Home</a>
-        <a class="about" href="#about">About</a>
+        <a class="about" href="about">About</a>
         
         <input type="text" class="search" id="search" placeholder=" Search...">
-        <button type="submit" class="btn btn-link" (click)="search()">
+        <button type="submit" class="btn btn-link" [routerLink]="['/products']" (click)="search()">
           <span class="glyphicon glyphicon-search"></span>
       </button>
         <span class="cart">
@@ -21,3 +21,8 @@
         </span>
 </div>
 <router-outlet></router-outlet>
+<footer>
+  <div class="well">
+  <p>Contact information: <a href="someone@example.com">someone@example.com</a>.</p>
+</div>
+</footer>

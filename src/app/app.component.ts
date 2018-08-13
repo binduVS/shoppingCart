@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IProduct } from './product'
 import { ProductService } from './product.service';
 import { Router } from '@angular/router';
+import { ProductListComponent } from './products/products-list/product-list.component'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,29 +18,25 @@ export class AppComponent {
   count:number;
   cart:any=[];
   search(){
-    var todosearch = (<HTMLInputElement>document.getElementById('search')).value;
-    this.searched=todosearch;
-     this.getByKey(todosearch);
-     console.log(this.filteredProducts);
-   
+    this.searched= (<HTMLInputElement>document.getElementById('search')).value;
+     this.getByKey(this.searched);
+     console.log(this.searched);
   };
   constructor(private _router: Router, private _productService : ProductService){
 
   }
   getByKey(todosearch) {
-    var found = null;
+    var found;
     for (var i = 0; i < this.Products.length; i++) {
-        var element = this.Products[i];
-
-        if (element.ProductName == todosearch) {
-           found = element;
+        if (this.Products[i].ProductName == todosearch) {
+          if(this.filteredProducts.includes(this.Products[i])==false){
+           found = this.Products[i];
            this.filteredProducts.push(found);
+           console.log(this.filteredProducts);
+          }
        } 
-       else{
-         console.log('not matched');
-       }
     }
-
+    
     return found;
 }
   ngOnInit(){

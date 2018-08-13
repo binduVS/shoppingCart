@@ -11,7 +11,8 @@ import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductService } from './product.service';
 import { CartService } from './cart.service';
-import { ProfileComponent } from './profile/profile.component'
+import { ProfileComponent } from './profile/profile.component';
+import { AboutComponent } from './about/about.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProfileComponent } from './profile/profile.component'
     CategoriesComponent,
     LoginComponent,
     CartComponent,
-    ProfileComponent
+    ProfileComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { ProfileComponent } from './profile/profile.component'
       { path: 'categories', component: CategoriesComponent },
       { path: 'login', component: LoginComponent },
       { path: 'cart', component: CartComponent },
-      { path: 'profile', component: ProfileComponent }
+      { path: 'profile', component: ProfileComponent },
+      { path: 'about', component: AboutComponent }
     ])
   ],
   providers: [ProductDetailComponent, ProductService, CartService],
