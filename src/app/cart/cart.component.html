@@ -13,17 +13,17 @@
       <tr>
         <td>{{carts.ProductName}}</td>
         <td>{{carts.ProductPrice}}</td>
-        <td>{{quantity}}</td>
-        <td>{{carts.ProductPrice*quantity}}</td>
+        <td>{{carts.ProductCount}}</td>
+        <td>{{(carts.ProductPrice)*(carts.ProductCount)}}</td>
       </tr>
     </tbody>
   </table>
   <div class="checkout">
     <div class="charges-checkout" *ngFor ='let carts of cart'>
-      <p>Total Price : {{carts.ProductPrice*quantity}}</p>
+      <p>Total Price : {{(carts.ProductPrice)*(carts.ProductCount)}}</p>
       <p>CGST : {{CGST}}</p>
       <p>SGST : {{SGST}}</p>
-      <p>Total Amount : {{totalprice+CGST+SGST}}</p>
+      <p>Total Amount : {{(carts.ProductPrice)*(carts.ProductCount)+CGST+SGST}}</p>
       <button type="submit" class="checkout-button" id="checkout-button">CheckOut</button>
     </div>
   </div>

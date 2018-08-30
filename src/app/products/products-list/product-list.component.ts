@@ -52,6 +52,7 @@ export class ProductListComponent implements OnInit {
   }
   brandfilter(){
     var brandfiltered=[];
+    this.Products = this.copy;
      var filtered = (document.getElementsByTagName('input'));
      for(var i=0; i<this.brandorder.length; i++){
       if(filtered[i].checked==true)
@@ -127,7 +128,10 @@ pricego(){
   var min = (<HTMLInputElement>document.getElementById('min-value')).value;
   var max = (<HTMLInputElement>document.getElementById('max-value')).value;
   if((min != '')&&(max != ''))
+  if((parseInt(min))<parseInt(max)){
+  console.log(min,max);
   this.filterprice(parseInt(min),parseInt(max));
+  }
 }
 
 constructor(private _productService:ProductService, private appcomponent:AppComponent){ 

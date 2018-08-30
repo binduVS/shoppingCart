@@ -10,7 +10,6 @@ import { AppComponent } from '../../app.component';
   styleUrls: ['./product-detail.component.css'],
 })
 export class ProductDetailComponent implements OnInit {
-
   pageTitle: string = 'Product Detail';
   product: IProduct;
   errorMessage:string;
@@ -38,8 +37,8 @@ export class ProductDetailComponent implements OnInit {
   }
 
    addtocart(){
-    localStorage.setItem('storedproduct', JSON.stringify(this.product));
     this.product["ProductCount"] = this.quantity;
+    localStorage.setItem('storedproduct', JSON.stringify(this.product));
     this.itemsArray.push(this.product)
     console.log(this.itemsArray);
    }

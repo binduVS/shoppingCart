@@ -43,13 +43,11 @@
       <input type="radio" class="price" name="price" (click)="radio2()"><p class="check-text" id="check-text2">{{filteredprices[quaterprice]}} to {{filteredprices[halfprice]}}</p><br>
       <input type="radio" class="price" name="price" (click)="radio3()"><p class="check-text" id="check-text3">{{filteredprices[halfprice]}} to {{filteredprices[maxprice-1]}}</p><br>
       <div class="price-enter">
-          <form>
           <i class="fa fa-rupee"></i>
           <input type="text" class="min-value" id="min-value" style="width: 30px;" required>
           <p class="to">to</p>
           <input type="text" class="max-value" id="max-value" style="width: 30px;" required>
           <button type="submit" class="price-go" style="width: 30px;" (click)="pricego()">Go</button>
-          </form>
         </div>
     </div>
 </div>

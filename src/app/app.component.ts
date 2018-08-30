@@ -21,6 +21,7 @@ export class AppComponent {
     this.searched= (<HTMLInputElement>document.getElementById('search')).value;
      this.getByKey(this.searched);
      console.log(this.searched);
+     return this.searched;
   };
   constructor(private _router: Router, private _productService : ProductService){
 
@@ -32,7 +33,7 @@ export class AppComponent {
           if(this.filteredProducts.includes(this.Products[i])==false){
            found = this.Products[i];
            this.filteredProducts.push(found);
-           console.log(this.filteredProducts);
+           console.log(this.filteredProducts.length);
           }
        } 
     }

@@ -20,7 +20,7 @@ CGST:number = 2.75;
 SGST:number= 2.75;
 // totalprice :number = (this.quantity)*(this.product.ProductPrice);
 constructor(private appcomponent:AppComponent, private productdetail: ProductDetailComponent) {
-  this.quantity = parseInt(productdetail.quantity);
+  //
   this.cartproducts=productdetail.itemsArray;
   console.log(productdetail.product);
 }
