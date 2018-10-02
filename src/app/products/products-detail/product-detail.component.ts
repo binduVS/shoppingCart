@@ -21,6 +21,7 @@ export class ProductDetailComponent implements OnInit {
   }
 
   increment(){
+    
     var input = parseInt((<HTMLInputElement>document.getElementById('quantity')).value);
     input = input + 1;
     this.quantity = input.toString();
